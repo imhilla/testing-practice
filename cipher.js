@@ -4,7 +4,7 @@ const shift = (string, key) => {
   let newString
   let newIndex = indexOfString + key
   if (newIndex > 25 && newIndex < 52) {
-    newIndex = newIndex - 25
+    newIndex = (newIndex - 25) - 1
     newString = alpahbet_array[newIndex];
     return newString
   } else {
