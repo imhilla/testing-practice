@@ -7,4 +7,6 @@ test('shifts one letter', () => {
 
 test('ciphers strings', () => {
   expect(cipher('abcdefghijklmnopqrstuvwxyz', 1)).toBe('bcdefghijklmnopqrstuvwxyza');
+  expect(cipher('abcde', 5)).toBe('fghij');
+
 });
