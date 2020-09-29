@@ -1,9 +1,5 @@
 import shift from './shift';
-
-const regTest = (string) => {
-  const regex = /[ !@#$%^&*()_+\-=[\]{};':"\\|,.<>?]/g;
-  return regex.test(string);
-};
+import regTest from './regtest'
 
 const cipher = (string, key) => {
   if ((regTest(string)) === true) {
