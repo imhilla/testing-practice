@@ -1,4 +1,4 @@
-import analyze from "./arrayAnalysis";
+import analyze from './arrayAnalysis';
 
 test('Analyze the Max Value in array', () => {
   expect(analyze([1, 5, 6]).max).toBe(6);
@@ -6,7 +6,9 @@ test('Analyze the Max Value in array', () => {
 
 test('object assignment', () => {
   const data = analyze([1, 5, 6]);
-  expect(data).toEqual({ average: 4, min: 1, max: 6, length: 3 });
+  expect(data).toEqual({
+    average: 4, min: 1, max: 6, length: 3,
+  });
 });
 
 test('Analyze the Min Value in array', () => {

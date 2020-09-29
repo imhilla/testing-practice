@@ -1,19 +1,19 @@
-let calculator = {
-  add: (x, y) => {
-    var x = x + y
-    return x
+const calculator = {
+  add: (a, b) => {
+    const x = a + b;
+    return x;
   },
-  subtract: (x, y) => {
-    var x = x - y
-    return x
+  subtract: (a, b) => {
+    const x = a - b;
+    return x;
   },
-  divide: (x, y) => {
-    var x = x / y
-    return x
+  divide: (a, b) => {
+    const x = a / b;
+    return x;
   },
-  multiply: (x, y) => {
-    var x = x * y
-    return x
-  }
-}
-export default calculator
+  multiply: (a, b) => {
+    const x = a * b;
+    return x;
+  },
+};
+export default calculator;
