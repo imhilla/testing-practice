@@ -1,5 +1,5 @@
 import shift from './shift';
-import regTest from './regtest'
+import regTest from './regtest';
 
 const cipher = (string, key) => {
   if ((regTest(string)) === true) {
