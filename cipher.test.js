@@ -8,5 +8,8 @@ test('shifts one letter', () => {
 test('ciphers strings', () => {
   expect(cipher('abcdefghijklmnopqrstuvwxyz', 1)).toBe('bcdefghijklmnopqrstuvwxyza');
   expect(cipher('abcde', 5)).toBe('fghij');
+});
 
+test('should throw an error', () => {
+  expect(cipher('wffeg.g', 3)).toBeTruthy();
 });
