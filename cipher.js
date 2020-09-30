@@ -1,9 +1,7 @@
 import shift from './shift';
 import regTest from './regtest';
 
-const isLowerCase = (stringI) => {
-  return (/[a-z]/.test(stringI));
-}
+const isLowerCase = stringI => (/[a-z]/.test(stringI));
 
 const cipher = (string, key) => {
   if ((regTest(string)) === true) {
@@ -15,9 +13,9 @@ const cipher = (string, key) => {
     if (isLowerCase(stripped[i]) === true) {
       empty.push(shift(stripped[i], key));
     } else {
-      const newI = stripped[i].toLowerCase()
-      let shifted = shift(newI, key);
-      var newS = shifted.toUpperCase();
+      const newI = stripped[i].toLowerCase();
+      const shifted = shift(newI, key);
+      const newS = shifted.toUpperCase();
       empty.push(newS);
     }
   }
