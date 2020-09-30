@@ -11,7 +11,7 @@ test('ciphers strings', () => {
 });
 
 test('keeps the same case regardless of input', () => {
-  expect(cipher('abcDefghiJklmnOpqrstUvwxyz', 1)).toBe('bcdefghijklmnopqrstuvwxyza');
+  expect(cipher('abcDefghiJklmnOpqrstUvwxyz', 1)).toBe('bcdEfghijKlmnoPqrstuVwxyza');
 });
 
 test('should throw an error', () => {
